@@ -1,0 +1,256 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body:before{
+	content: '';
+	background: url("/resimler/bg.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	opacity: 0.1;
+	width: 100%;
+	height: 100vh;
+	display: block;
+	z-index: -10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	
+}
+.menu{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #212529;
+	z-index: 100
+}
+.navbar{
+	background: #212529 !important;
+	max-width: 1000px;
+}
+.banner{
+	height: 100vh;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+}
+.banner video{
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	z-index: 10;
+}
+
+@media screen and (max-width:992px){
+	.banner{
+		height: 70vh;
+	}
+}
+.banner .filtre{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(135deg, #ce1b28 0%, #111111 74%);
+	z-index: 20;
+	opacity: .6;
+}
+.banner .yazi{
+	position: absolute;
+	z-index: 30 !important;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	text-align: center;
+}
+
+.banner .yazi h1{
+	font-size: 70px;
+	color:#fff;
+	font-weight: 100;
+}
+
+.banner .yazi p{
+	color:#fff;
+	font-size: 18px;
+}
+.bolum1{
+	margin-top: 50px;
+	text-align: center;
+}
+.bolum2 h2{
+	font-size: 30px;
+	color: #555555;
+	font-weight: 400;
+}
+.bolum1 p{
+	font-size: 14px;
+    color: #555555;
+	letter-spacing: 0.5px;
+}
+.bolum1 .kart{
+	background: white;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+.bolum1 .kart i{
+	color: #ce1b28;
+	font-size: 60px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.bolum1 .kart h3{
+	font-size: 24px;
+	line-height: 30px;
+	color: #555555;
+    font-weight: 300;
+	letter-spacing: 0.5px;
+	padding: 20px;
+}
+.bolum1 .kart p{
+	font-size: 16px;
+	line-height: 20px;
+	color: #55555;
+}
+.bolum2{
+	margin-top: 50px;
+	padding: 100px 0;
+	background: linear-gradient( rgba(244, 48, 51, 0.25), rgba(192, 6, 9, 0.25)) ,url(/resimler/cta01.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	text-align: center;
+}
+.bolum2 h2{
+	color: white;
+	font-weight: 300;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+.bolum2 p{
+	color: #ededed;
+	font-size: 16px;
+	font-weight: 100;
+	letter-spacing: 0.5px;
+	line-height: 20px;
+}
+.bolum3{
+	margin-top: 50px;
+	text-align: center;
+}
+.bolum3 h2{
+	color: #555555;
+	font-weight: 300;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+.bolum3 p{
+	color: #555555;
+	font-size: 16px;
+	font-weight: 100;
+	letter-spacing: 0.5px;
+	line-height: 20px;
+	margin-bottom: 50px;
+}
+.bolum3 .kart{
+	background: white;
+	padding: 20px;
+	margin-bottom: 10px;
+}
+.bolum3 .kart p{
+	text-align: left;
+	margin-left: 20px;
+	padding-left: 50px;
+	border-left: 8px solid #b6aeae;
+	font-style: italic;
+}
+.bolum3 .kart .resim{
+	width: 100%;
+	text-align: center;
+
+}
+.bolum3 .kart img{
+	width: 20%;
+    border-radius: 100%;
+}
+.bolum3 .kart span{
+	font-size: 12px;
+}
+footer{
+	margin-top: 50px;
+	background: #000;
+	color:#fff;
+	padding: 50px 0;
+}
+footer hr{
+	border-bottom: 1px solid #756e6e;
+}
+footer h3{
+	font-size: 20px;
+	font-weight: 300;
+	margin-bottom: 30px;
+}
+footer p{
+	font-size: 15px;
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+footer h4{
+	font-size: 18px;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+footer ul.aciklama{
+	list-style: none;
+}
+footer ul.aciklama li{
+	padding: 10px 0;
+	border-bottom: 1px solid #756e6e;
+}
+footer ul.aciklama li:last-child{
+	border: none;
+}
+
+footer ul.aciklama li a{
+	color: #bfb4b4;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+
+footer ul.sosyalmedya{
+	list-style: none;
+}
+footer ul.sosyalmedya li{
+	padding: 10px 0;	
+}
+footer ul.sosyalmedya li a{
+	color: #bfb4b4;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+footer ul.sosyalmedya li i{
+margin-right: 25px;
+}
+
+
+footer span{
+	font-size: 13px;
+	color:#6b6b6b
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
