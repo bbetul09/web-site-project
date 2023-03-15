@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+}
+
+.menu {
+    background: #484747;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+}
+
+.navbar {
+    max-width: 1000px;
+}
+
+.navbar a {
+    color: #fff;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.navbar ul {
+    margin-left: 50px;
+
+}
+.navbar ul li:hover{
+    background: #5b4f31;
+    border-radius: 5px;
+}
+
+.navbar ul li a {
+    color: #fff(153, 152, 152);
+    font-weight: 700
+}
+
+.banner1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.banner1 img {
+    width: 300px;
+    height: 450px;
+    border-radius: 100%;
+    margin-top: 90px;
+    
+
+}
+
+.banner1 h2 {
+ 
+    font-size: 28px;
+}
+
+.banner1 p {
+
+    color: #b3b2b2;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.banner1 a {
+    color: #fff;
+    margin-top: 1rem;
+    background: #605f5f;
+    padding: 0.8rem 3rem;
+    border-radius: 5px;
+}
+
+.banner1 a:hover {
+    background: #fff;
+    color: #605f5f !important;
+    border: 1px solid #605f5f;
+    letter-spacing: 1px;
+}
+
+.bolum1 {
+    background: #3b3a3a;
+    color: #fff;
+    padding-top: 10px;
+    display: block !important;
+}
+
+.bolum1 h2 {
+    font-size: 24px;
+}
+
+.bolum1 h4 {
+    font-size: 18px;
+}
+
+.bolum1 p {
+    font-size: 14px;
+}
+.kart:hover{
+    color: #fff;
+    opacity: 0.5;
+}
+.bolum2{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.bolum2 h4{
+    font-size: 24px;
+    color: #605f5f;
+    text-align: center;
+}
+.bolum2 img{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.kart{ 
+    margin-top: 30px;
+}
+.bolum2 p{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: #969494;
+}
+.b{
+    font-weight: 600;
+    color: #4e4d4d;
+    font-weight: bold;
+}
+.bolum2 span{
+    position: absolute;
+    top: 30px;
+    background: #fff;
+    border: 1px solid #ebe9e9;
+    border-radius: 5px;
+    font-size: 16px; 
+}
