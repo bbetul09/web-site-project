@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<style>
+    div[class*="col"] {
+        border: 2px solid red;
+    }
+
+
+</style>
+</head>
+<body>
+    <!-- POST bilgileri adres satırında göstermez GET gösterir -->
+ <form action="kontrol.php" method="POST" class="container " >
+    <div class="form-group">
+        <label for="eposta">Eposta adresinizi giriniz</label>
+        <input type="email" name="email" class="form-control is-valid" id="eposta">
+        <!--  form-control demessek en sade haliyle gelir -->
+        <small class="form-text text-muted">Eposta adresinizi girmek zorunludur</small>
+    </div>
+    <div class="form-group">
+        <label for="sifre">Şifrenizi giriniz    </label>
+        <input type="password" id="sifre" name="pass" class="form-control">
+    </div>
+<div class="form-group">
+     <input type="checkbox" name="hatırla" id="hatırla">
+    <label for="hatırla">Beni hatırla</label>
+</div>
+<!-- name önemli cunku veriler name uzerinden gider -->
+<!-- yanyana gelmesini istiyorsan FORM-İNLİNE -->
+<div class="form-group">
+    <label for="secim">
+        <select name="secenek" id="secim" class="custom-select custom-select-lg" >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+
+
+        </select>
+    </label>
+    <div class="form-group">
+        <label for="exampleFormControlFile1">Example file input</label>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+      </div>
+</div>
+<div class="form-group">
+<input class="form-control" type="text" placeholder="Readonly input here..." readonly></div>
+<div class="form-check">
+    <input class="form-check-input " type="checkbox" value="" id="defaultCheck1">
+    <label class="form-check-label" for="defaultCheck1">
+      Default checkbox
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+    <label class="form-check-label" for="defaultCheck2">
+      Disabled checkbox
+    </label>
+    <!-- FORM-CHECK-İNLİNE ile yanyana getirilebilir -->
+  </div>
+  <div class="custom-control custom-switch">
+    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+    <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+  </div>
+<button type="submit" class="btn btn-primary btn-block">Giriş</button>
+ </form>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+</html>

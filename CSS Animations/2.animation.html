@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.kutu {
+
+    padding: 2px;
+    width: 300px;
+    height: 30px;
+    border-radius: 15px;
+    background: #424242;
+}
+.ic {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: yellow;
+    border-radius: 15px;
+    /* animation-name: ilerle;
+    animation-duration: 3s;
+    animation-delay: 1s; */
+    animation: ilerle 3s linear 1s;
+    /* animation-timing-function: ease-in-out; */
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate;  bastan mı sondan mı baslıcak
+    onu belirleyebilirsin */
+    /* animation-fill-mode: ;  animasyon bittiğinde ne olacak onu belirler */
+
+}
+.ic:hover {
+    animation-play-state: paused;
+}
+/* animasyonlar @keyframe Animasyon_Adı ile başlar */
+@keyframes ilerle {
+    /*  baslama bitme noktası lazım */
+    from{ width: 30px;
+    }
+    to {
+        width: 300px;
+    }
+
+    /*
+    0%{width:30px; gibi}
+    50%{}
+    100%{} diyerek 3 saniyeyi 100% olarak
+    alıp bolerek bu kısımlarda ne olacagını belirtebiliresin */
+}
+</style>
+</head>
+<body>
+<div class="kutu"><div class="ic"></div></div>
+
+</body>
+</html>
