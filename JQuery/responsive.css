@@ -1,0 +1,65 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #828282;
+    position: relative;
+    
+}
+ul li {
+    display: inline-block;
+}
+ul li a {
+text-decoration: none;
+color:black;
+padding: 15px;
+display: block;
+}
+ul li:hover {
+    background: #B9B9B9;
+    
+}
+
+ul ul {
+    position: absolute;
+    min-width: 200px;
+    background: #B9B9B9;
+    display:none;
+}
+ul ul li {
+    display: block;
+    background: #e3e3e3;
+
+}
+
+ul li i {
+    margin-left: 5px;
+    float: right;
+}
+nav div {
+    background: #828282;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    padding: 10px;
+} 
+header nav div {
+    display: none;
+}
+@media (max-width: 700px) {
+    nav div {
+        display: block;
+    }
+ul {
+    display: none;
+    position: static;
+    background: #B9B9B9;
+}
+ul li {
+    display: block;
+}
+ul ul {
+    /* position static asırı önemli */
+    position: static; 
+    background: #B9B9B9 ; }
+}

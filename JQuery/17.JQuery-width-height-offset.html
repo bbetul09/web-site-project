@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.5.1.min.js"></script>
+    <style>
+
+        .kutu {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            width: 100px;
+            height: 100px;
+            background: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <button id="oku"> degerleri oku</button>
+    <button id="degistir">degerleri degistir</button>
+    <div class="kutu"></div>
+    <p id="deger"></p>
+    <script>
+            $(document).ready(function(){
+                $("#oku").click(function(){
+                 var ust = $(".kutu").offset().top; //top degerini okumak için
+                 var left = $(".kutu").offset().left;
+
+                 $("p").html("üstten:"+ust+" "+"soldan"+left);
+                }); //BU KISIM GET KISMIYDI ŞİMDİ AŞŞADA SET KISMI OLUCAK
+                    $("#degistir").click(function(){
+                        $(".kutu").offset({top:200,left:200})
+                        $(".kutu").width(300)
+                    });
+                
+
+            }); // bunun kısa yolu $(function(){})
+
+
+    </script>
+</body>
+</html>

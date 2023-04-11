@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.5.1.min.js"></script>
+    
+    
+    
+    <style>
+.bilgi{
+    background: #FFA9AA;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid black;
+
+}
+input {
+    margin-bottom: 25px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="bilgi" id="icerik"> 
+        Ad Soyad : <input type="text" name="adSoyad" id="adsoyad" value=""> <br>
+     
+        Okul No : <input type="text" name="okulNo" id="okulno" >
+        <br>
+        <input type="button" name="basiniz" id="basiniz" value="basınız">
+
+    </div>
+    <script>
+$(document).ready(function(){
+ $(":button").click(function(){
+     $("#icerik").append($("input:eq(0)").attr("name"));
+    $("input:eq(1)").attr("value","okul NO")
+// birden fazla attr ekleme :
+ $("input:eq(1)").attr({
+     type:"text",
+     id:"okulno1",
+     value:"okul no"
+
+
+});
+
+ });
+});
+
+    </script>
+<!-- ATTR = The attr() method sets or returns attributes and values of the selected elements.
+
+When this method is used to return the attribute value, it returns the value of the FIRST matched element.
+
+When this method is used to set attribute values, it sets one or more attribute/value pairs for the set of matched elements. -->
+
+</body>
+</html>

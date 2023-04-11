@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <h4>Gizle / Göster</h4>
+        <p>Javascript</p>
+    </div>
+    <div>
+        <h4>Gizle / Göster</h4>
+        <p>JQuery</p>
+    </div>
+    <div>
+        <h4>Gizle / Göster</h4>
+        <p>PHP</p>
+    </div>
+    <script>
+        $(document).ready(function () {
+            var secici = $("div");
+            secici.find("p").css("display", "none") // filter deseydik olmazdı cunku o zaman sadece div lerin arasından ayırma yapabilirdik biz burda cocuk elemanların arasında ayırma yapıyoruz
+            secici.click(function () {
+                
+                $(this).find("p").slideToggle(500);
+                // this burda seçilen div i temsil ediyor
+//find yerine children da kullanabilrdik burda aynı islemi görüyor
+            });
+
+        });
+
+
+//slideToggle() method animates the height of the matched elements. 
+//This causes lower parts of the page to slide up or down, 
+//appearing to reveal or conceal the items. 
+//If the element is initially displayed, it will be hidden; 
+//if hidden, it will be shown. The display
+// property is saved and restored as needed.
+
+    </script>
+
+</body>
+
+</html>

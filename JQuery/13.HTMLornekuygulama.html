@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <label for="uzmanlik">uzmanlık</label>
+        <select name="" id="uzmanlik">
+            <option value=""> seçiniz</option>
+            <option value="grafik" > grafiker</option>
+            <option value="web"> Web programlama</option>
+            <option value="masaustu"> Masaüstü programlama</option>
+
+        </select>
+    </div>
+    <br>
+    <div class="secenek"> <form action="" class="bilgi" method="get"></form></div>
+    
+    <script>
+        $(document).ready(function(){
+            $("select").change(function(){ // degisiklik yapıldıgı zaman fonksyona girilen komutların uygulanmasını saglar
+                var meslek = $(".container option:selected").val();
+            $(".bilgi").empty();
+            if(meslek == "grafik") {
+                $(".bilgi").append("<input type='checkbox' name='meslek' value='PS'> photoshop ")
+                $(".bilgi").append("<input type='checkbox' name='meslek' value='AI'> ıllustrator ")
+                $(".bilgi").append("<input type='checkbox' name='meslek' value='CD'> corel draw ")
+            }
+            if(meslek == "web") {
+                $(".bilgi").append("<input type='checkbox' name='meslek' value='PS'> photoshop ")
+                $(".bilgi").append("<input type='checkbox' name='meslek' value='AI'> ıllustrator ")
+                $(".bilgi").append("<input type='checkbox' name='meslek' value='CD'> corel draw ")
+            }
+            });
+        });
+// name = meslek yazmasanda oluyor
+
+
+    </script>
+</body>
+</html>

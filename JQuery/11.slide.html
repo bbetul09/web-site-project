@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+         $(".baslik").click(function(){
+            
+            $(this).find(".icerik").slideToggle("slow");
+
+
+         });
+            
+            // slideToggle sayesinde tıklayınca acıp 2. tıklamada kapatabiliriz.
+        });
+
+    </script>
+    <style>
+.baslik , .icerik {
+    padding: 5px;
+    text-align: center;
+    background: skyblue;
+    border: 1px solid black;
+}
+.icerik {
+    padding: 30px;
+    display: none;
+}
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="baslik">menu    <div class="icerik"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae consectetur similique in explicabo temporibus vero numquam, ullam amet doloremque nostrum corrupti eaque porro aut nisi harum ipsam perspiciatis id soluta deleniti veniam corporis! Esse, omnis minus totam excepturi distinctio nostrum impedit provident molestiae soluta ex architecto ea qui neque non.</div>
+</div>
+    <div class="baslik">menu    <div class="icerik"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae consectetur similique in explicabo temporibus vero numquam, ullam amet doloremque nostrum corrupti eaque porro aut nisi harum ipsam perspiciatis id soluta deleniti veniam corporis! Esse, omnis minus totam excepturi distinctio nostrum impedit provident molestiae soluta ex architecto ea qui neque non.</div>
+</div>
+    <div class="baslik">menu    <div class="icerik"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae consectetur similique in explicabo temporibus vero numquam, ullam amet doloremque nostrum corrupti eaque porro aut nisi harum ipsam perspiciatis id soluta deleniti veniam corporis! Esse, omnis minus totam excepturi distinctio nostrum impedit provident molestiae soluta ex architecto ea qui neque non.</div>
+</div>
+
+</body>
+</html>
