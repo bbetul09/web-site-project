@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #kapsayici {
+            max-width: 640px;
+            position: relative;
+            margin: auto;
+        }
+
+        .resim {
+            width: 100%;
+            display: none;
+            /* herşeyi gizler */
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .ileri,
+        .geri {
+            position: absolute;
+            background: grey;
+            opacity: 0.6;
+            font-size: 20px;
+            padding: 10px;
+            color: white;
+            cursor: pointer;
+            top: 50%;
+            transform: translateY(-50%);
+            /*tam ortalamak için */
+            border-radius: 50%;
+        }
+
+        .ileri {
+            right: 0;
+            transition: 0.1;
+
+        }
+
+        .geri {
+            left: 0;
+        }
+
+        .aktif {
+            display: block;
+            animation: fade .8s ease;
+        }
+
+        @keyframes fade {
+            0% {
+                opacity: .5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+
+        }
+
+        ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        ul li {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: grey;
+            display: inline-block;
+        }
+
+        .aktiflist {
+            background: #D1D0D1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="kapsayici" onmouseover="dur()" onmouseout="basla()">
+        <div class="resim"><img src="images/resim2.jpg" alt=""></div>
+        <div class="resim"><img src="./images/resim3.jpg" alt=""></div>
+        <div class="resim"><img src="images/resim4.jpg" alt=""></div>
+        <div class="resim"><img src="images/resim1.jpg" alt=""></div>
+        <div class="ileri" onclick="ileri()">>></div>
+        <div class="geri" onclick="geri()"> << </div>
+                <ul class="ul">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+        </div>
+        <script>
+
+
+            var resim = document.getElementsByClassName("resim"); // bunu yaptıgımızda butun resimlere indis numarası ekleniyor ona göre kullanmamız lazım
+            var kutucuk = document.getElementsByTagName("li");
+            var indeks = 0;
+            galeri();
+            basla();
+            function galeri() {
+                if (indeks >= resim.length) {
+                    indeks = 0;
+                }
+                else if (indeks < 0) {
+                    indeks = resim.length - 1;
+                }
+                for (i = 0; i < resim.length; i++) {
+                    resim[i].classList.remove("aktif");
+                    
+                }
+                resim[indeks].classList.add("aktif");
+                
+            }
+
+            function ileri() {
+                indeks++;
+                galeri();
+            }
+            function geri() {
+                indeks--;
+                galeri();
+            }
+            function dur() {
+                clearInterval(sure);
+            }
+            function basla() {
+                sure = setInterval(ileri, 3000)
+            }
+        </script>
+
+</body>
+
+</html>

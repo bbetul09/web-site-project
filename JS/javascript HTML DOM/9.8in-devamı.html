@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="kutu1">
+      aa  </div>
+      <div id="kutu2">
+        bb</div>
+        <div id="kutu3">cc</div>
+    
+    
+
+    <script>
+      kutu1 = document.getElementById("kutu1");
+      kutu2 = document.getElementById("kutu2");
+      kutu3 = document.getElementById("kutu3");
+      kutu1.addEventListener(
+        "click",
+        function (e) {
+          alert("kutu1 tıklandı");
+        },
+       
+      );
+      kutu2.addEventListener(
+        "click",
+        function (e) {
+          
+          alert("kutu2 tıklandı");
+        },
+       
+      );
+      kutu3.addEventListener(
+        "click",
+        function (e) {
+         
+          alert("kutu3 tıklandı");
+        },
+       
+      );
+      // true  yazınca durumu tersine çevirdik. sadece tıkladıgımızın gorunmesini istediğimiz için de fonksiyon içine stoppropagation ekledik
+    </script>
+    <!-- event.stopPropagation()
+
+Örneğin bir unorderedlist (<ul>) ile çalışırken listedeki bir eleman(<li>) tıklandığında, hemen (<ul>) elementinde de “click” event tetiklenecektir. Çünkü bu ili element iç içe barındırılmaktadır. Eğer (<li>) elementine tıklandığında (<ul>) elementinde bir “click” event gerçekleşmesinin istenmediği durumda event.stopPropagation() metodu kullanılmaktadır.-->
+  </body>
+</html>

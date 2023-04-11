@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #kapsayici {
+        width: 200px;
+        height: 400px;
+        background: red;
+        position: relative;
+        overflow: hidden;
+    }
+    #haber {
+        width: 200px;
+        height: 300px;
+        background: turquoise;
+        position: absolute;
+    }
+   
+</style>
+</head>
+
+
+<body>
+    <!-- <input type="button" value="dur" onclick="dur()"> -->
+    <div id="kapsayici"  >
+        <div id="haber" onmouseover="dur()" onmouseout="devam()" >
+            <p>haber 1</p>
+            <p>haber 2</p>
+            <p>haber 3</p>
+        </div>
+    </div>
+
+    <!-- setInterval = belli zaman aralıklarında fonksiyonun surekli calısmasını sağlamak -->
+    <script>
+        // function mesaj() {
+        //     alert("javascript derlseri");
+
+        // }
+        // zaman = setInterval("mesaj()",2000);
+        // function dur() {
+        //     clearInterval(zaman);
+        // }
+devam();
+        var haber = document.getElementById("haber");
+        kaydır = 0;
+        function yukari() {
+            kaydır--;
+            haber.style.top = kaydır+"px";
+            if(kaydır < -300) {
+                kaydır = 400;
+            }
+
+        }
+       
+
+        function dur() {
+             clearInterval(zaman);
+        }
+        
+        function devam() {
+            zaman = setInterval(yukari,10);
+        }
+        
+
+    </script>
+
+</body>
+
+</html>

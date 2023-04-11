@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="cevre"></p> -->
+    <p id="toplam"></p>
+    <p id="toplam2"></p>
+    <input id="deger1" type="text" placeholder="kenar uzunlugunu giriniz" >
+    
+    <input type="button" onclick="kare(2)" id="hesapla" value="hesapla" >
+    <script>
+//         function dikdortgenCevre(uzunKenar , kisaKenar) {
+//             cevre = 2* (uzunKenar + kisaKenar)
+//             return cevre;
+//         }
+// dikdortgen = dikdortgenCevre(15,10);
+// document.getElementById("cevre").innerHTML = dikdortgen
+function kare(sayi) {
+ var sayi =   document.getElementById("deger1").value;
+ 
+    var sayininKaresi = sayi * sayi;
+    // return sayininKaresi;
+document.getElementById("toplam2").innerHTML = sayininKaresi;
+
+}
+function kup(sayi) {
+var sayininKüpü = sayi *sayi* sayi;
+return sayininKüpü;
+
+}
+topla = kare(4) + kare(6);
+
+topla2 = kup(3) + kup(9);
+
+topla3 = kare(3) + kup(3)
+document.getElementById("toplam").innerHTML = topla3;
+    </script>
+</body>
+</html>

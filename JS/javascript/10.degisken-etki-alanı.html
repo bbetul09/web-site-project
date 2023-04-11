@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="goster"></p>
+    <script>
+        //fonk içindeki yerel değişken script içinde falan yazarsak global
+var pi =3.14
+        function alanHesapla(r) {
+    var alan = pi * r * r
+            return alan
+}
+function cevreHesapla(r) {
+var cevre = 2*pi *r;    
+return cevre;
+}
+function yazdir() {
+    document.getElementById("goster").innerHTML ="Alan:" + alanHesapla(2)
+     + "Çevre" + cevreHesapla(3);
+}
+yazdir();
+
+
+    </script>
+    <!--  basında var olamdan yazılan elementler global dir
+    (function yazdir() {
+    document.getElementById("goster").innerHTML ="Alan:" + alanHesapla(2)
+     + "Çevre" + cevreHesapla(3);
+})(); ===> fonksiyonun kendi kendini çağırıp çalışması için yapılabilir
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    -->
+</body>
+</html>

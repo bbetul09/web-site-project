@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="dil">
+        <li>javascript</li>  <li>phyton</li>  <li>C#</li>
+    </ul>
+    <script>
+        // var baslik = document.createElement("h1");
+        // var yazi = document.createTextNode("burası baslık");   // textNode sayesinde h1 in içine yazıyı ilave etmiş oluyoruz
+        // baslik.appendChild(yazi);   // yazi yi baslik kısmına ekledik
+        // document.body.appendChild(baslik);
+
+            var yenioge = document.createElement("li");
+            var yazi = document.createTextNode("delphi");
+            yenioge.appendChild(yazi);
+            var nereye = document.getElementById("dil");
+            nereye.insertBefore(yenioge,nereye.childNodes[1]); //insertBefore(ne eklenecek,nereye eklenecek[elemenlar dizi olarak gösterilir])
+            
+
+    </script>
+
+
+</body>
+</html>

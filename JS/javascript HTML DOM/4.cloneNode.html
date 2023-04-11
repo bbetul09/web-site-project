@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="liste1"><li>python</li><li>C#</li></ul>
+    <ul id="liste2"><li>java</li> <li>javascript</li></ul>
+        <button onclick="tası()">taşı</button>
+        <input type="button" value="sil" onclick="sil()">
+        <input type="button" onclick="degistir()" value="degistir">
+        <input type="button" value="kopyala" onclick="kopyala()">
+        <!--    AMAC ALTTAKİ UL ELEMANLARINI BİR ÜSTTEKİ UL YE TAŞIMAK -->
+    <!--  normalde alt alta yazarsak kodları buttona iki kere tıklamamız gerekir 
+    bu yuzden yan yana yazarız ki tek tıklamada işlem gerçekleşsin -->
+        <script>
+            function tası() {
+                var tas_eleman = document.getElementById("liste2").lastChild;
+                var nereyetasınacak = document.getElementById("liste1");
+                nereyetasınacak.insertBefore(tas_eleman, nereyetasınacak.childNodes[0]);
+            }
+            function sil() {
+    var silinecek = document.getElementById("liste1");
+    alert(silinecek.hasChildNodes());
+    if(silinecek.hasChildNodes()) { // veri true ise devam edicek false ise durduracak
+    silinecek.removeChild(silinecek.lastChild);
+    }
+            }
+            function degistir() {
+                yenibilgi = document.createTextNode("C++");
+                sec = document.getElementById("liste1"); 
+                
+                sec.replaceChild(yenibilgi,sec.childNodes[0]);
+    
+            }
+    
+            function kopyala() {
+kopyalanacak = document.getElementById("liste2").lastChild;
+kopya = kopyalanacak.cloneNode(true);
+nereye = document.getElementById("liste1");
+// nereye.appendChild(kopya);
+nereye.insertBefore(kopya,nereye.childNodes[1]);
+
+            }
+    
+        </script>
+</body>
+</html>

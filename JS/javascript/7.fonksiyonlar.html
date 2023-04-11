@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p id="cevre"></p>    
+<!-- <button onclick="dikdortgenCevre()"> Çevre hesapla</button>  -->
+<input type="button" value="çevreyi hesapla" onclick="yazdir()">
+    <script>
+function dikdortgenCevre() {
+var a = 5 ; b = 15;
+cevre = 2*(a+b)
+return cevre; 
+// return = fonksiyonun çağırıldıgı yere bu bilgiyi gönder demektir
+}
+function yazdir() {
+ var element =   document.getElementById("cevre").innerHTML = dikdortgenCevre();
+    
+}
+
+    </script>
+<!-- fonksiyonun calısabilmesi için çağrılması gerekmektedir. -->
+</body>
+</html>

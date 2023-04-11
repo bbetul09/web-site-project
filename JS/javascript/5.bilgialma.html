@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function hesapla(){
+var a= document.getElementById("sayi1").value;
+var b= document.getElementById("sayi2").value;
+a = parseInt(a);
+b = parseInt(b);
+//parseInt sayısal ifadeye çevirir burda kullanmamız lazım cunku string olarak algılıyor
+islem = a+b;
+alert(islem);
+
+        }
+
+    </script>
+</head>
+<body>
+    Sayi1<input type="text" id="sayi1"><br>
+    Sayi2<input type="text" id="sayi2"><br>
+<input type="button" value="hesapla" onClick="hesapla()">
+    
+</body>
+</html>
