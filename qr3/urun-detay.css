@@ -1,0 +1,52 @@
+#urun-detay {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: 'Playfair', serif !important;
+}
+
+.urun-background {
+    width: 100%;
+    height: 500px !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    
+    filter: brightness(100%) !important;
+}
+
+.urun-baslik {
+    color: #c35823!important;
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 20px 0 0 0;
+    font-family: 'Playfair', serif !important;
+    
+
+}
+.urun-icerik {
+    color:  #c35823;
+    font-size: 1.2rem !important;
+    font-weight: 1.2rem;
+    margin: 0 0 55px 0;
+   opacity: .8;
+}
+.geri-don {
+    color:   #c35823;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid   #c35823;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    transition: .3s ease;
+}
+
+
+.geri-don:hover {
+    background-color:  black;
+    color: black;
+}
+hr {
+    color: black!important;
+    border: 1px solid  black !important;
+}

@@ -1,0 +1,241 @@
+
+ html {
+    margin-top: 55px;
+}
+body {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+min-height: 100vh !important;
+overflow-x: hidden !important;
+
+
+
+}
+
+.wrapper {
+    height: 100%;
+ 
+}
+nav  {
+   background: #fff !important;
+   transition: .3s;
+   padding: 0 !important;
+
+}
+.acilir-menu {
+    background: transparent !important;
+    text-align: center !important;
+}
+.nav-link {
+    color: #fff!important;
+    letter-spacing: 2px !important;
+    font-size: 24px !important;
+    font-weight: bold !important;
+    font-style: italic !important;
+        font-family: 'Playfair', serif !important;
+}
+.urunler .urun a{
+    color: #c7815e!important;
+    letter-spacing: 2px !important;
+    font-size: 18px !important;
+    font-weight: 500 !important; 
+    font-style: italic !important;
+    font-family: 'Playfair', serif !important;
+}
+.karart{
+    background: rgba(0, 0, 0, 0.3) !important ;
+}
+nav .navbar-brand {
+    width: 40%;
+    height: 100px;
+    background-position: center !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+nav .urunler {
+    padding: 0 0 0 15px!important;
+    display: none;
+}
+nav .urun {
+    list-style: none;
+}
+nav .urun a {
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: 'Playfair', serif !important;
+}
+nav .urun a:hover {
+    opacity: .7;
+}
+.navbar button i{
+    color: black !important;
+
+}
+
+#section1 {
+    font-family: 'Playfair', serif !important;
+    margin-bottom: 15px;
+    margin-top: 70px !important;
+}
+.section1-container {
+    border-radius: 10px;
+}
+.kart {
+    padding: 0 3px 3px 3px;
+    
+
+}
+
+.kart a {
+    position: relative;
+    transition: .3s;
+    flex-wrap: wrap;
+    padding: 15px !important;
+
+}
+.kart a:hover {
+    transform: scale(110%);
+}
+.kart span {
+    position: absolute;
+    color: black;
+    top: 3%;
+    right: 7%;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 50px;
+    background-color: #fff;
+}
+.kategori-kapsayici{
+    padding: 15px 0 0 0;
+}
+.kart .kategori-isim {
+    box-sizing: border-box !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff !important;
+    font-weight: bold;
+    font-size: 1.3rem !important ;
+    backdrop-filter: brightness(65%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100% !important;
+   height: 100% !important;
+    
+}
+.kart .kategori-isim1 {
+    box-sizing: border-box !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff !important;
+    font-weight: bold;
+    font-size: 1.6rem !important ;
+    backdrop-filter: brightness(65%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100% !important;
+   height: 100% !important;
+    
+}
+.col-6 {
+    padding: 0 !important;
+
+
+}
+.col-12 {
+    padding: 0 !important;
+}
+.col-12 .kart{
+    border-radius: 2px !important;
+}
+.kart a {
+    width: 100%;
+    height: 150px ;
+    display: block;
+    background-position: center !important;
+    background-size:cover !important;
+    background-repeat: no-repeat !important;
+    border-radius: 5px;
+}
+
+.iletisim{
+    height: auto;
+    text-align: center !important;
+    font-family: 'Playfair', serif !important;
+    
+}
+.iletisim .footer-logo{
+    display: block !important;
+    width: 160px !important;
+    height: 140px !important;
+    margin: auto !important;
+    margin: 15px auto 0 auto !important;
+}
+.iletisim a img{
+    width: 100% !important;
+    height: 100% !important;
+}
+.iletisim h3{
+    font-size: 30px;
+    font-style: italic !important;
+   text-align: center !important;
+   margin: 15px auto !important;
+   letter-spacing: 2px !important;
+   color:  black !important;
+   font-weight: bold;
+}
+.iletisim p{
+    font-size: 18px !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    font-style: italic !important;
+    margin: 15px auto !important;
+    letter-spacing: 1px !important;  
+    color:  black !important;
+    opacity: .8 !important;
+}
+.footer-sosyal i{
+    font-size: 40px !important;
+    color: black !important;
+    opacity: .7 !important;
+    padding: 0 0 15px 0;
+   
+}
+
+#kayan-kapsayici {
+    width: 100%;
+    overflow: hidden !important;
+    padding: 20px !important;
+}
+#kaydir{
+    position: relative;
+    margin: 0 !important;
+}
+#kayan-kapsayici  p{
+    font-size: 20px;
+    font-style: italic !important;
+    letter-spacing: 2px !important;
+    color: black !important;
+    font-weight: 500;
+    font-family: 'Playfair', serif !important;
+
+}
+.urun-fiyat{
+    color: #fff !important ;
+    background: transparent !important;
+    border: 2px solid white !important ;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px 10px !important;
+}
+ .iletisim .numara{
+    font-weight: bold  !important;
+    font-size: 22px !important;
+}
